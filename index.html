@@ -12,6 +12,13 @@
 	  gtag('config', 'UA-208615497-1',{'debug_mode':true});
 	</script>
     
+	  <script type="application/javascript">
+  function getIP(json) {
+    dataLayer.push({"event":"Blocking - Internal IPs","ipAddress" : json.ip});	
+  }
+</script>
+
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
  <!– Google Tag Manager –>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
